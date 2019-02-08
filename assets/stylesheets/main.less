@@ -1,0 +1,716 @@
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+body.login-bg {
+  background-color: #44b6e0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body.home-bg {
+  background-color: #e75d5d;
+}
+
+.default-bg {
+  margin: 0px;
+  width:  100%;
+  height: 100%;
+}
+
+
+// Eashan have custom classes  dont override boostrap as it affects in other places
+.loginTable > tbody > tr > td, .loginTable > tbody > tr > th, .loginTable > tfoot > tr > td, .loginTable > tfoot > tr > th, .loginTable > thead > tr > td, .loginTable > thead > tr > th{
+  border: none;
+}
+
+.login-submit-btn {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #9ddbf2 0px, #e0e0e0 100%) repeat scroll 0 0;
+    color: white;
+    font-size: 25px;
+    width: 90vw;
+    margin: 1vw;
+}
+
+.row {
+  margin-left: 0px;  
+}
+
+.header {
+  background-color: #44b6e0;
+  height: auto; 
+  padding: 1vh;
+}
+
+.loginTable {
+    text-align:center;
+
+  input {
+        background-color: #9ddbf2;
+        border:none;
+        height: 8vh;
+        width: 90vw;
+        padding:0px 30px;
+        font-size:25px;
+        color:#ffffff;
+        border-radius:4px;
+        margin: 1vw
+    }
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for vh unit */
+  min-height: 100vh; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+
+::-webkit-input-placeholder {
+    color:rgba(255,255,255,0.8);
+}
+:-moz-placeholder {
+    color:rgba(255,255,255,0.8);
+}
+::-moz-placeholder {
+    color:rgba(255,255,255,0.8);
+}
+:-ms-input-placeholder {
+    color:rgba(255,255,255,0.8);
+}
+
+.alert-note {
+    background-color: #f05345;
+    font-size:20px;
+    color:rgba(255,255,255,0.8);
+    border-radius: 4px;
+    padding:12px 30px;
+    margin:0 auto;
+    text-align: left;
+    height:72px;
+    width:385px;
+    line-height: 1.2;
+    position: relative;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 13px 14px 13px;
+    border-color: transparent transparent #f05345 transparent;
+    position: absolute;
+    left:65%;
+    top:-14px;
+}
+
+.logo-img {
+  display: inherit;
+  margin:0 auto;
+  padding: 3vh;
+}
+
+.float-right {
+  float: right;
+}
+
+.settings-img {
+  width: auto;
+  height: 5vh;
+  padding: 1vh;
+  float: right;
+}
+
+.copy-right {
+    color:rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+// Container
+// removing 15px padding
+.container{
+  padding: 0;
+}
+
+.list-group {
+    margin-bottom: 0;
+    box-shadow: -5px 0 8px 0 #bbbbbb inset;
+    margin-bottom: 0;
+    padding: 0 8px 0 0;
+}
+.list-group-item {
+    font-size: 19px;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    padding: 20px 55px;
+    border-right:none;
+    border-radius:0!important;
+}
+.name {
+    font-size: 29px;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 0.033em;
+    margin-top: 7px;
+    margin-bottom: 1px;
+}
+.age {
+    font-size: 23px;
+    font-weight: 200;
+    color:#666;
+}
+.personal-details {
+    padding: 38px 10px 0;
+}
+.appointment-details,.med {
+    padding:5px;
+}
+
+.grade, .school, .physician, .interviewer, .interview-date, .start-date,.med,.edit {
+    font-size: 19px;
+    color: #333;
+    font-weight: 200;
+    letter-spacing: 0.04em;
+}
+
+.row {
+    margin-right:0!important;
+}
+
+.col-md-4{
+  padding-right: 0!important;
+}
+
+.list-group-item.selected {
+    /*border-right:none!important;*/
+    margin-right: -8px;
+    /*border-radius: 0;*/
+}
+.logo {
+  padding-left: 4px;
+  /* padding-bottom: 21%; */
+  /* top: 10px; */
+  width: 177px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+// Patients list
+
+.patients.list-group{
+  border-radius: 0;
+}
+
+.patients{
+  height: 85vh;
+  overflow-y: auto;
+  background-color: #eee;
+  -webkit-overflow-scrolling: touch;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+// New form overlay
+
+.white_background{
+  background-color: white;
+  margin: 10px 20px;
+  padding: 6% 0;
+  cursor: pointer;
+}
+.white_background:hover,.white_background:focus,.white_background:active{
+  background-color: #ff0000;
+  color:white;
+}
+
+
+.transparent_body_modal{
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+
+// Animation effect
+
+.patient_forms > div{
+  height: 50vh;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}
+
+.plus, .button1, .button2{
+  display: inline;
+}
+
+.button_container{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.button1, .button2{
+  position: relative;
+  z-index: -1;
+}
+.button1{
+  left: 155px;
+}
+.button2{
+  left: 80px;
+}
+
+.plus > img{
+  width: 80px;
+}
+
+/* Tablesorter Custom Bootstrap LESS Theme by Rob Garrison
+
+To create your own theme, modify the code below and run it through
+a LESS compiler, like this one: http://leafo.net/lessphp/editor.html
+or download less.js from http://lesscss.org/
+
+Test out these custom less files live
+ Basic Theme : http://codepen.io/Mottie/pen/eqBbn
+ Bootstrap   : http://codepen.io/Mottie/pen/Ltzpi
+ Metro Style : http://codepen.io/Mottie/pen/gCslk
+
+*/
+
+/*** theme ***/
+@theme                 : tablesorter-bootstrap;
+
+/*** fonts ***/
+@tableHeaderFont       : 14px bold Arial, Sans-serif;
+@tableBodyFont         : 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*** color definitions ***/
+/* for best results, only change the hue (240),
+   leave the saturation (60%) and luminosity (80%) alone
+   pick the color from here: http://hslpicker.com/#99E699 */
+@headerBackground      : white;
+@borderAndBackground   : #cdcdcd;
+@overallBorder         : @borderAndBackground 1px solid;
+@headerTextColor       : #000;
+
+@bodyBackground        : #fff;
+@bodyTextColor         : #000;
+
+@headerAsc             : darken(spin(@headerBackground, 5), 10%); /* darken(@headerBackground, 10%); */
+@headerDesc            : lighten(spin(@headerBackground, -5), 10%); /* desaturate(@headerAsc, 5%); */
+
+@captionBackground     : #fff; /* it might be best to match the document body background color here */
+@errorBackground       : #e6bf99; /* ajax error message (added to thead) */
+
+@filterCellBackground  : #eee;
+@filterElementTextColor: #333;
+@filterElementBkgd     : #fff;
+@filterElementBorder   : 1px solid #bbb;
+@filterTransitionTime  : 0.1s;
+@filterRowHiddenHeight : 4px; /* becomes height using padding (so it's divided by 2) */
+
+@overallPadding        : 4px;
+/* 20px should be slightly wider than the icon width to avoid overlap */
+@headerPadding         : 4px 20px 4px 4px;
+@headerMargin          : 0 0 18px;
+
+/* url(icons/loading.gif); */
+@processingIcon        : url('data:image/gif;base64,R0lGODlhFAAUAKEAAO7u7lpaWgAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgACACwAAAAAFAAUAAACQZRvoIDtu1wLQUAlqKTVxqwhXIiBnDg6Y4eyx4lKW5XK7wrLeK3vbq8J2W4T4e1nMhpWrZCTt3xKZ8kgsggdJmUFACH5BAEKAAIALAcAAAALAAcAAAIUVB6ii7jajgCAuUmtovxtXnmdUAAAIfkEAQoAAgAsDQACAAcACwAAAhRUIpmHy/3gUVQAQO9NetuugCFWAAAh+QQBCgACACwNAAcABwALAAACE5QVcZjKbVo6ck2AF95m5/6BSwEAIfkEAQoAAgAsBwANAAsABwAAAhOUH3kr6QaAcSrGWe1VQl+mMUIBACH5BAEKAAIALAIADQALAAcAAAIUlICmh7ncTAgqijkruDiv7n2YUAAAIfkEAQoAAgAsAAAHAAcACwAAAhQUIGmHyedehIoqFXLKfPOAaZdWAAAh+QQFCgACACwAAAIABwALAAACFJQFcJiXb15zLYRl7cla8OtlGGgUADs=');
+
+/* zebra striping */
+.allRows {
+  background-color: @bodyBackground;
+  color: @bodyTextColor;
+}
+.evenRows {
+  background-color: lighten(@headerBackground, 35%);
+}
+.oddRows {
+  background-color: lighten(@headerBackground, 18%);
+}
+
+/* hovered rows */
+.oddHovered {
+}
+.evenHovered {
+}
+
+/* Columns widget */
+@primaryOdd    : spin(@headerBackground, 10); /* saturate( darken( desaturate(@headerBackground, 10%), 10% ), 30%); */
+@primaryEven   : lighten( @primaryOdd, 10% );
+@secondaryOdd  : @primaryEven;
+@secondaryEven : lighten( @primaryEven, 5% );
+@tertiaryOdd   : @secondaryEven;
+@tertiaryEven  : lighten( @secondaryEven, 5% );
+
+/* Filter widget transition */
+.filterWidgetTransition {
+  -webkit-transition: line-height @filterTransitionTime ease;
+  -moz-transition: line-height @filterTransitionTime ease;
+  -o-transition: line-height @filterTransitionTime ease;
+  transition: line-height @filterTransitionTime ease;
+}
+
+/*** icon block ***/
+.iconPosition {
+  font-size: 11px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  margin-top: -7px; /* half the icon height; older IE doesn't like this */
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  line-height: 14px;
+}
+
+/* black */
+@unsortedBlack : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAMAAADOvxanAAAAVFBMVEUAAABCQkJZWVkZGRnJyckgICAZGRkZGRn8/PweHh4dHR0aGhoaGhpUVFQbGxvQ0NDc3NxMTExSUlIbGxvr6+s4ODhKSkogICAtLS00NDQzMzMnJydSEPrQAAAAGHRSTlMA1ssZRLgdAQbDyisqsZo8QdXUq0r9xPepSRwiAAAAX0lEQVQI13XHSQKAIAwEwQAKxn13Ev7/T2Pu9qmarJKPXIicI4PH4hxaKNrhm2S8bJK5h4YzKHrzJNtK6yYT/TdXzpS5zuYg4MSQYF6i4IHExdw1UVRi05HPrrvT53a+qyMFC9t04gcAAAAASUVORK5CYII=);
+
+/* white */
+@unsortedWhite : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOBAMAAAALT/umAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMA4EXKBtQqvR0+sxmalc142gAAAFdJREFUCNdjYGDoamAAAjZbMxCVfvd6AgMDd+3du9UMDKx3hWSvMjBwXZww8RYDGuC53NB8h4GB8a617UUGBs7Yu3cjGRhYVO9eVQFKOskKOQApFmUgBwBZ+xXRTttNdAAAAABJRU5ErkJggg==);
+
+/* automatically choose the correct arrow/text color */
+.headerText (@a) when (lightness(@a) >= 50%) {
+  color: @headerTextColor;
+}
+.headerText (@a) when (lightness(@a) < 50%) {
+  color: lighten(@headerTextColor, 90%);
+}
+.unsorted (@a) when (lightness(@a) >= 50%) {
+  background-image: @unsortedBlack;
+  color: @headerTextColor;
+}
+.unsorted (@a) when (lightness(@a) < 50%) {
+  background-image: @unsortedWhite;
+  color: lighten(@headerTextColor, 90%);
+}
+
+/* variable theme name - requires less.js 1.3+;
+   or just replace (!".@{theme}") with the contents of @theme
+*/
+.@{theme} {
+  font: @tableBodyFont;
+  background-color: @borderAndBackground;
+  width: 100%;
+
+  /* style th's outside of the thead */
+  th, thead td {
+    font: @tableHeaderFont;
+    font-weight: bold;
+    background-color: @headerBackground;
+    .headerText(@headerBackground);
+    border-collapse: collapse;
+    margin: @headerMargin;
+    padding: @overallPadding;
+  }
+
+  tbody td, tfoot th, tfoot td {
+    padding: @overallPadding;
+    vertical-align: top;
+  }
+
+  /* style header */
+  .tablesorter-header {
+    cursor: pointer;
+  }
+
+  .tablesorter-header-inner {
+    position: relative;
+    padding: @headerPadding;
+  }
+
+  /* bootstrap uses <i> for icons */
+  .tablesorter-header-inner i.tablesorter-icon {
+    .iconPosition
+  }
+
+  .tablesorter-header.sorter-false {
+    background-image: none;
+    cursor: default;
+
+  }
+
+  .tablesorter-headerAsc {
+    background-color: @headerAsc;
+  }
+
+  .tablesorter-headerDesc {
+    background-color: @headerDesc;
+  }
+
+  .bootstrap-icon-unsorted {
+    .unsorted(@headerBackground);
+  }
+
+
+  /* tfoot */
+  tfoot .tablesorter-headerAsc,
+  tfoot .tablesorter-headerDesc {
+    /* remove sort arrows from footer */
+    background-image: none;
+  }
+
+  /* optional disabled input styling */
+  .disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: not-allowed;
+  }
+
+  /* body */
+  tbody {
+
+    td {
+      .allRows;
+      padding: @overallPadding;
+      vertical-align: top;
+    }
+
+    /* Zebra Widget - row alternating colors */
+    tr.odd > td {
+      background-color: #F9F9F9;
+    }
+    tr.even > td {
+      background-color: white;
+    }
+
+  }
+
+  /* hovered row colors
+  you'll need to add additional lines for
+  rows with more than 2 child rows
+  */
+  tbody > tr.hover > td,
+  tbody > tr:hover > td,
+  tbody > tr:hover + tr.tablesorter-childRow > td,
+  tbody > tr:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td,
+  tbody > tr.even.hover > td,
+  tbody > tr.even:hover > td,
+  tbody > tr.even:hover + tr.tablesorter-childRow > td,
+  tbody > tr.even:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
+    .evenHovered;
+  }
+  tbody > tr.odd.hover > td,
+  tbody > tr.odd:hover > td,
+  tbody > tr.odd:hover + tr.tablesorter-childRow > td,
+  tbody > tr.odd:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
+    .oddHovered;
+  }
+
+  /* table processing indicator - indeterminate spinner */
+  .tablesorter-processing {
+    background-image: @processingIcon;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* caption (non-theme matching) */
+  caption {
+    background-color: @captionBackground ;
+  }
+
+  /* filter widget */
+  .tablesorter-filter-row input,
+  .tablesorter-filter-row select{
+    width: 98%;
+    margin: 0;
+    padding: @overallPadding;
+    color: @filterElementTextColor;
+    background-color: @filterElementBkgd;
+    border: @filterElementBorder;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .filterWidgetTransition;
+  }
+  .tablesorter-filter-row {
+    background-color: @filterCellBackground;
+  }
+  .tablesorter-filter-row td {
+    text-align: center;
+    background-color: @filterCellBackground;
+    line-height: normal;
+    text-align: center; /* center the input */
+    .filterWidgetTransition;
+  }
+  /* hidden filter row */
+  .tablesorter-filter-row.hideme td {
+    padding: @filterRowHiddenHeight / 2;
+    margin: 0;
+    line-height: 0;
+    cursor: pointer;
+  }
+  .tablesorter-filter-row.hideme * {
+    height: 1px;
+    min-height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* don't use visibility: hidden because it disables tabbing */
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  /* rows hidden by filtering (needed for child rows) */
+  .filtered {
+    display: none;
+  }
+
+  /* ajax error row */
+  .tablesorter-errorRow td {
+    text-align: center;
+    cursor: pointer;
+    background-color: @errorBackground;
+  }
+
+}
+
+.tablesorter-bootstrap > tbody > tr > td, 
+.tablesorter-bootstrap > tbody > tr > th, 
+.tablesorter-bootstrap > tfoot > tr > td, 
+.tablesorter-bootstrap > tfoot > tr > th, 
+.tablesorter-bootstrap > thead > tr > td, 
+.tablesorter-bootstrap > thead > tr > th {
+  border: none;
+}
+
+.selected > td {
+  background-color: #50D050 !important;
+}
+
+.day.disabled, .month.disabled, .year.disabled, .decade.disabled{
+  color: #BBB !important;
+}
+
+// loading icon bootstrap
+// usage <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+.glyphicon-refresh-animate {
+  -animation: spin 1s infinite linear;
+  -webkit-animation: spin2 1s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  from { -webkit-transform: rotate(0deg);}
+  to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  from { transform: scale(1) rotate(0deg);}
+  to { transform: scale(1) rotate(360deg);}
+}
+
+.LayoutRow { padding-bottom: 20px; }
+
+.modal-header{ 
+  background-color: #febe22;
+  color: white;
+  img{
+     width: 25px;
+  }
+}
+
+.tileLayoutRow { 
+  padding-bottom: 20px;
+}
+
+.ftu_screen {
+  top: 310px;
+  height: 50vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  color: white;
+}
+
+.modal-dialog {
+  overflow-y: initial !important
+}
+
+.modal-body {
+  max-height: 85vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

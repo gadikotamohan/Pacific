@@ -1,0 +1,18 @@
+{
+  "migrations": [
+    {
+      "version": 1,
+        "up": [
+          "CREATE TABLE IF NOT EXISTS app_data(first_time_user INTEGER DEFAULT 0, last_try DATETIME, number_of_failed_attempts INTEGER DEFAULT 0, created_at DATETIME, signed_in_at DATETIME, updated_at DATETIME, ID TEXT)"
+        ],
+        "down": []
+    },
+    {
+      "version": 2,
+        "up": [
+          "ALTER TABLE app_data ADD serverName TEXT DEFAULT 'https://demo.capsicohealth.com'"
+        ],
+        "down": []
+    }
+  ]
+}

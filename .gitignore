@@ -1,0 +1,18 @@
+# gitignore template for the Cordova framework
+# website: https://cordova.apache.org/
+#
+# Recommended template: Node.gitignore
+
+# App platform binaries and built files
+platforms
+
+# Optional to ignore plugin Git clones
+plugins
+
+# NPM/Yarn & Bower folders
+node_modules
+bower_components
+components
+
+# www folder is generated after running `grunt build`
+www

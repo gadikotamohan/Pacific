@@ -1,0 +1,29 @@
+.FormContainer{
+  .tileLayoutRow{
+    overflow: visible !important;
+  }
+}
+
+.Radio_OFF, .Radio_OFF:link, .Radio_OFF:visited, Radio_ON, .Radio_ON:link, .Radio_ON:visited {
+   background-position: 3px 1px;
+}
+
+.Checkbox_OFF, .Checkbox_OFF:link, .Checkbox_OFF:visited, .Checkbox_ON, .Checkbox_ON:link, .Checkbox_ON:visited {
+   background-position: 3px 3px;
+}
+
+.tileHeader .actions {
+  top: unset;
+}
+
+.tileHeader { 
+  padding: 10px 5px 10px 1px;
+}
+
+.actions a {
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.users_list_container {
+  padding: 3vh;
+}
