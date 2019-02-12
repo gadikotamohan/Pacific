@@ -4,14 +4,11 @@
     "requirejs": "latest",
     "persistence": "latest",
     "aes-js": "latest",
-    "backbone": "1.2.3",
-    "text": "latest",
-    "backbone.hammer": "latest",
     "bootstrap": "3.3.2",
     "jquery": "latest",
-    "jquery-hammerjs": "latest",
     "lodash": "3.10.1",
     "jsSHA": "latest",
-    "strftime": "latest"
+    "strftime": "latest",
+    "text": "latest"
   }
 }

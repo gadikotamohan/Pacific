@@ -9,21 +9,16 @@ require.config({
     "encryption_helper"    : "./helpers/encryption_helper",
     "login_helper"         : "./helpers/login_helper",
     'text'                : '../../../bower_components/text/text',
-    'backbone'            : '../../../bower_components/backbone/backbone',
-    'jquery-hammerjs'     : '../../../bower_components/jquery-hammerjs/jquery.hammer-full',
-    'backbone-hammer'     : '../../../bower_components/backbone.hammer/backbone.hammer',
+    "react"                : "../../../node_modules/react/umd/react.production.min",
+    "react-dom"            : "../../../node_modules/react-dom/umd/react-dom.production.min",
+    "scheduler"           : "../../../node_modules/scheduler/umd/scheduler.production.min",
+    "object-assign"       : "../../../node_modules/object-assign/index",
     'underscore'          : '../../../bower_components/lodash/lodash',
     'lodash'              : '../../../bower_components/lodash/dist/lodash',
     'jquery'              : '../../../bower_components/jquery/dist/jquery',
     "strftime"            : '../../../bower_components/strftime/strftime',
     'bootstrap'           : '../../../bower_components/bootstrap/dist/js/bootstrap',
     'jsSHA'               : '../../../bower_components/jsSHA/src/sha256',
-    'aes-js'              : '../../../bower_components/aes-js/index',
-  },
-  shim: {
-    backbone: {
-      deps: ['jquery', 'underscore', 'strftime', 'app_view_helpers', 'config'],
-      exports: 'Backbone'
-    }
+    'aes-js'              : '../../../bower_components/aes-js/index'
   }
 });

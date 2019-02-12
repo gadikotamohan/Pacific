@@ -14,7 +14,6 @@ define(function(require, exports, module) {
     });
   })
   var AppData = require('app_db_models/app_db');
-  var Session = require('models/session_model')
 
   persistence_sqlite.defineMigration(3, {
     up: function() {
@@ -23,7 +22,6 @@ define(function(require, exports, module) {
       console.log("inserting new row");
       persistence_sqlite.add(app_data);
       persistence_sqlite.flush();
-      Session.set('ftu', true);
     }
   });
 

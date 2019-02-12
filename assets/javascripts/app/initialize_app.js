@@ -1,8 +1,7 @@
 require([
   'capsico_app',
-  'helpers/bootstrap_helpers',
-  'models/session_model'
-], function(CapsicoApp, bootstrapHelpers, Session) {
+  'helpers/bootstrap_helpers'
+], function(CapsicoApp, bootstrapHelpers) {
   $.fn.serializeObject = function () {
       "use strict";
       var a = {}, b = function (b, c) {
@@ -11,7 +10,6 @@ require([
       };
       return $.each(this.serializeArray(), b), a
   };
-  var Backbone = require('backbone');
 
   var startApp = function() {
     setTimeout(function(){
@@ -27,19 +25,17 @@ require([
 
   var lockApp = function(){
     setTimeout(function(){
-      redirect_from = Backbone.history.location.hash
+      redirect_from = "" // Current location
       db = DatabaseHelper.getSecureDB();
-      Session.unset('authenticated');
       if (!redirect_from.startsWith("#login"))
         {
-          Session.set('redirectFrom', Backbone.history.location.hash);
+          // Save current_location as redirect_from 
         }
       if(db != null)
         {
           db.close();
         }
-      console.log("redirectFrom = ", Backbone.history.location.hash);
-      window.app.router.navigate("#login", {trigger: true, replace: true});
+      // TODO Naviate to Login
     }, 0);
   }
 
