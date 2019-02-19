@@ -1,4 +1,5 @@
 define(function(require, exports, module) {
+  var _            = require('underscore');
   user_db_migration = require('text!../database/migrations/user_db.json')
   user_db_migration = JSON.parse(user_db_migration);
   _.each(user_db_migration.migrations, function(migration){

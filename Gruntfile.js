@@ -43,12 +43,6 @@ config = function(grunt) {
           },
           {
             expand: true,
-            cwd: './bower_components/eonasdan-bootstrap-datetimepicker/build/css/',
-            src: ['bootstrap-datetimepicker.css'],
-            dest: 'www/css'
-          },
-          {
-            expand: true,
             cwd: 'bower_components/bootstrap/dist/css/',
             src: ['bootstrap.css'],
             dest: 'www/css'
@@ -87,7 +81,6 @@ config = function(grunt) {
         files: {
           'www/css/main.css': [
             'bower_components/bootstrap/dist/css/bootstrap.css', 
-            'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
             'www/css/main.css'
           ]
         },

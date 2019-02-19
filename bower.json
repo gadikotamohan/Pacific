@@ -4,10 +4,10 @@
     "requirejs": "latest",
     "persistence": "latest",
     "aes-js": "latest",
-    "bootstrap": "3.3.2",
     "jquery": "latest",
     "lodash": "3.10.1",
     "jsSHA": "latest",
+    "bootstrap": "3.3.2",
     "strftime": "latest",
     "text": "latest"
   }

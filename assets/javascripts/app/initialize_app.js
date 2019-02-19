@@ -1,7 +1,12 @@
 require([
   'capsico_app',
-  'helpers/bootstrap_helpers'
-], function(CapsicoApp, bootstrapHelpers) {
+  'jquery',
+  'strftime'
+], function(CapsicoApp, $) {
+
+  window.jQuery = $
+  window.$ = $;
+
   $.fn.serializeObject = function () {
       "use strict";
       var a = {}, b = function (b, c) {
@@ -13,7 +18,6 @@ require([
 
   var startApp = function() {
     setTimeout(function(){
-      setupBootStrapNavLinks();
       window.app = new CapsicoApp();
     }, 0);
   }
@@ -35,7 +39,7 @@ require([
         {
           db.close();
         }
-      // TODO Naviate to Login
+      window.location.hash = "" // Login is root-path
     }, 0);
   }
 

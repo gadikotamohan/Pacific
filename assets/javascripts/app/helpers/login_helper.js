@@ -2,11 +2,13 @@ define(function(require) {
 
   var jsSHA     = require('jsSHA');
   var encHelper = require('encryption_helper')
+  var DatabaseHelper = require('database_helper');
 
   var LoginHelper = {
     _is_authenticated: false,
     _db_details: null,
     _timeout: "Unable to reach server",
+    _server_error: "Server failed to process the request",
     _incorrect_db_details: "Server failed to return Database details.",
     _successCallback: null,
     _errorCallback: null,
@@ -19,6 +21,13 @@ define(function(require) {
 
       var xhr = new XMLHttpRequest();
       xhr.onload = function() {
+
+        if(xhr.status == 500) {
+          // Server Error.
+          that._errorCallback.apply(null, [that._server_error])
+          return;
+        }
+
         try {
           response_json = JSON.parse(xhr.responseText)
         } catch(err) {
