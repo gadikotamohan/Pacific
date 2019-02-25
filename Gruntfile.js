@@ -25,6 +25,9 @@ config = function(grunt) {
           "no-write": true
         },
         src: ["!www/config.xml", "www/*"]
+      },
+      "babelGenerated": {
+        src: ["./assets/javascripts/app/components/*.js"]
       }
     },
     copy: {
@@ -205,5 +208,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['babel', 'copy', 'requirejs', 'less', 'cssmin']);
+  grunt.registerTask('build', ['babel', 'copy', 'requirejs', 'less', 'cssmin', 'clean:babelGenerated']);
 };

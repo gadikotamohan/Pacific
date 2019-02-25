@@ -122,7 +122,7 @@ define(function(require) {
       for (let i = 0; i < tenants.length; i++) {
         elements.push(
           <div className="col-md-4 col-sm-6 padding-15">
-            <button className="btn btn-block btn-default" id={tenants[i].tenantUserRefnum} onClick={tenants[i].tenantUserRefnum}>
+            <button className="btn btn-block btn-default" id={tenants[i].tenantUserRefnum} onClick={this.handleTenantSelect}>
               {tenants[i].name}
             </button>
           </div>

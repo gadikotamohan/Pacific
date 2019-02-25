@@ -18,4 +18,4 @@ bower_components
 /www
 
 # Ignore react jsx->js generated files
-/assets/javascripts/app/components/*.js
+# /assets/javascripts/app/components/*.js
