@@ -4,6 +4,21 @@ path = require('path');
 
 config = function(grunt) {
   grunt_config = {
+    babel: {
+      options: {
+        sourceMap: false,
+        presets: ['@babel/preset-react']
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: './assets/javascripts/app/components',
+          src: ['*.jsx'],
+          dest: './assets/javascripts/app/components',
+          ext: '.js'
+        }]
+      }
+    },
     clean: {
       "default": {
         options: {
@@ -180,6 +195,7 @@ config = function(grunt) {
 
 module.exports = function(grunt) {
   grunt.initConfig(config(grunt));
+  grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-requirejs');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -189,5 +205,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['copy', 'requirejs', 'less', 'cssmin']);
+  grunt.registerTask('build', ['babel', 'copy', 'requirejs', 'less', 'cssmin']);
 };

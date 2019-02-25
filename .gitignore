@@ -12,7 +12,10 @@ plugins
 # NPM/Yarn & Bower folders
 node_modules
 bower_components
-components
+/components
 
 # www folder is generated after running `grunt build`
-www
+/www
+
+# Ignore react jsx->js generated files
+/assets/javascripts/app/components/*.js
