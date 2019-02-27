@@ -1,4 +1,12 @@
 {
   "migrations": [
+    {
+      "version": 1,
+      "up": [
+        "CREATE TABLE IF NOT EXISTS users(personRefnum INTEGER UNIQUE, data TEXT);"
+      ],
+      "down": [
+      ]
+    }
   ]
 }

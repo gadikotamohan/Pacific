@@ -85,16 +85,19 @@ define(function(require) {
           that.state.loginType = type
           if (type == "SELECT_TENANT") {
             that.state.loginData = { tenants: tenantsList }
+            that.setState(that.state);
           }
           else if (type == "EULA") {
             that.state.loginData = { url: eulaUrl, token: eulaToken }
+            that.setState(that.state);
+          }
+          else if (type == "LOGIN") {
+            // TODO: change to "users"
+            window.location.hash = "users";
           }
           else {
-            // Login Flow Successful,
-            // Take user to Home Page
-            window.location.hash = "home";
-          }
-          that.setState(that.state);
+            window.location.hash = "first_time_user";
+          }          
         },
         function(err) {
           var _login_component = that;
@@ -161,10 +164,10 @@ define(function(require) {
         <div className="vertical-center">
           <form className="form col-md-4 col-sm-10" onSubmit={this.handleSubmit}>
             <div className="row">
-              <input type="email" name="email" className="form-control" placeholder="Email" required="required" />
+              <input type="email" name="email" className="form-control" placeholder="Email" required="required" value="mark@capsicohealth.com" />
             </div>
             <div className="row">
-              <input type="password" name="pswd" className="form-control" placeholder="Password" required="required" />
+              <input type="password" name="pswd" className="form-control" placeholder="Password" required="required" value="demoCap!"/>
             </div>
             <br/>
             <div className="row">

@@ -10,7 +10,7 @@
     {
       "version": 2,
         "up": [
-          "ALTER TABLE app_data ADD serverName TEXT DEFAULT 'https://demo.capsicohealth.com'"
+          "ALTER TABLE app_data ADD serverName TEXT DEFAULT 'https://172.16.0.30:8443'"
         ],
         "down": []
     }

@@ -4,6 +4,7 @@ define(function(require) {
   var CapsicoApp = function() {
 
     require('app_view_helpers')
+    require('capsico_helpers')
     const React = require('react');
     const ReactDOM = require('react-dom');
     const ReactRouter = require('react-router-dom');
@@ -37,7 +38,7 @@ define(function(require) {
               cl("~~> App opened first time")
               dbPromiseQuery("INSERT INTO app_data(first_time_user) VALUES(0)", [], false)
                 .then(function(data) {
-                  window.serverName = "https://demo.capsicohealth.com";
+                  window.serverName = "https://172.16.0.30:8443";
                   var first_time_user = 0;
                   _capsico_app.setupView();
                   if(first_time_user != 2) {
@@ -81,6 +82,8 @@ define(function(require) {
     window.DatabaseHelper = require('database_helper');
     window.SecureStorageHelper = require("secure_storage_helper");
     window._ = require("underscore")
+
+    App.initVault();
 
     var db = DatabaseHelper.getInstance()
       .then(function(data){
